@@ -1,0 +1,30 @@
+@import 'spritesheet';
+
+html,body,ul,ol {
+    margin:0;
+    padding:0;
+}
+
+button {
+    border:none;
+}
+.sprite-btn {
+    display: inline-block;
+    background: url('../img/' + $fork-image);
+    &.fork {
+        width: $fork-width;
+        height: $fork-height;
+        background-position: $fork-offset-x $fork-offset-y;
+    }
+    &.github {
+        width: $github-width;
+        height: $github-height;
+        background-position: $github-offset-x $github-offset-y;
+    }
+    &.twitter {
+        width: $twitter-width;
+        height: $twitter-height;
+        background-position: $twitter-offset-x $twitter-offset-y;
+    }
+
+}
