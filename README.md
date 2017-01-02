@@ -2,5 +2,5 @@
 
 ## 01.spritesmith.sass
 ## 02.sass.watch
-### 02-1. Add Browsersync
+   02-1. Add Browsersync
   
