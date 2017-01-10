@@ -2,7 +2,7 @@
 ## gulp-sass-lint
 
 # 1. sass, sass watch
-### gulp + gulp-sass
+### gulp + gulp-sass-lint
 - 'gulp-sass-lint'를 사용해 sass파일의 실수를 찾아주는 코드 검사기
 
 #### npm install
@@ -26,5 +26,7 @@ gulp.task('default', function () {
         .pipe(sassLint.failOnError())
 });
 ```
-! Node.js(src/images/sass-lint-img.png)
+![img](src/images/sass-lint-img.png)
 > 결론은 gul-sass-lint 플러그인을 따로 쓰는것보다 gulp-sass의 error message가 훨씬 좋음
+
+# 2. webpack bundling
