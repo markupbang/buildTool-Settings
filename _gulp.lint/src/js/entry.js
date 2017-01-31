@@ -1,4 +1,3 @@
-// entry.js
-var hello = require('./hello');
-var world = require('./world');
-document.write(hello + ', ' + world + '!');
+require('./components/Collapse');
+require('./components/Modal');
+require('./components/Tab');
