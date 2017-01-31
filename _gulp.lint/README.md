@@ -28,11 +28,13 @@ gulp.task('default', function () {
 ![difference](./src/image/sass-lint-img.png)
 > 결론은 gul-sass-lint 플러그인을 따로 쓰는것보다 gulp-sass의 error message가 훨씬 좋음
 
+
+
 # 2. gulp building
 ### gulp-concat + gulp-uglify
 > gulp-concat: js 파일 병합을 위한 플러그인  
 > gulp-uglify: js 파일 압축을 위한 플러그인  
-> gulp-jshint: js 코드 검사를 위한 플러그인 [JSHint 옵션](https://blog.outsider.ne.kr/1007)
+> gulp-jshint: js 코드 검사를 위한 플러그인 [JSHint 옵션](https://blog.outsider.ne.kr/1007)  
 > jshint-stylish: JSHint 에러 메세지의 가독성을 높여주는 플러그인
 
 #### npm install
