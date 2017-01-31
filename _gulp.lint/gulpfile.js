@@ -22,7 +22,7 @@ var SRC = {// input file
 var dist = DIR.DEST; // output file
 
 // task
-gulp.task('lint', function() {
+gulp.task('lint-js', function() {
     gulp.src(SRC.JS)
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'))
@@ -37,7 +37,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(DIR.DEST));
 });
 
-gulp.task('js', function() {
+gulp.task('js', ['lint-js'], function() {
     gulp.src([SRC.JS, SRC.UTIL])
     .pipe(concat('bundle.js'))
     .pipe(uglify())
@@ -47,7 +47,7 @@ gulp.task('js', function() {
 // watch
 gulp.task('watch', function () {
     gulp.watch(SRC.SCSS, ['sass']);
-    gulp.watch(SRC.JS, ['js','lint']);
+    gulp.watch(SRC.JS, ['js']);
 });
 
-gulp.task('default', ['sass','js','lint','watch']);
+gulp.task('default', ['sass','js','watch']);
