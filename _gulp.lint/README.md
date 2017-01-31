@@ -1,7 +1,6 @@
 ###### Gulp setting
-## gulp-sass-lint
 
-# 1. sass, sass watch
+# 1. gulp-sass-lint
 ### gulp + gulp-sass-lint
 - 'gulp-sass-lint'를 사용해 sass파일의 실수를 찾아주는 코드 검사기
 
