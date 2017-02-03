@@ -34,14 +34,14 @@ gulp.task('sass', function () {
 	.pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
 	.pipe(sourcemaps.write(DIR.MAP))
-    .pipe(gulp.dest(DIR.DEST));
+    .pipe(gulp.dest(dist));
 });
 
 gulp.task('js', ['lint-js'], function() {
     gulp.src([SRC.JS, SRC.UTIL])
     .pipe(concat('bundle.js'))
     .pipe(uglify())
-	.pipe(gulp.dest(DIR.DEST));
+	.pipe(gulp.dest(dist));
 });
 
 // watch
