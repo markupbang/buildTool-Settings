@@ -26,7 +26,7 @@ gulp.task('default', function () {
 });
 ```
 ![difference](./src/image/sass-lint-img.png)
-> 결론은 gul-sass-lint 플러그인을 따로 쓰는것보다 gulp-sass의 error message가 훨씬 좋음
+> 결론은 gulp-sass-lint 플러그인을 따로 쓰는것보다 gulp-sass의 error message가 훨씬 좋음
 
 
 
