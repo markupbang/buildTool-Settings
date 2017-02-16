@@ -32,7 +32,7 @@ npm run devbuild
 
 #### nodemon
 - 소스 수정시 자동으로 서버를 재시작 해주는 도구
-![nodemon](https://nodemon.io/)
+[nodemon](https://nodemon.io/)
 
 ##### npm script
 ```sh
@@ -67,9 +67,10 @@ npm run build
 
 ### uglifyjs
 - js파일 압축
+[uglifyjs](http://lisperator.net/uglifyjs/)
 
 ##### npm script
 ```sh
 uglifyjs src/js/util/*.js src/js/components/*.js -o dist/bundle.min.js --source-map dist/map/bundle.min.js.map -p 5 -c -m
 ```
-[uglifyjs](http://lisperator.net/uglifyjs/)
+
