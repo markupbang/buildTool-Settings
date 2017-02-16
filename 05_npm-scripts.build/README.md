@@ -14,16 +14,16 @@ npm run devbuild
 ### sass-lint
 - sass파일의 실수를 찾아주는 코드 검사기: node-sass의 기본 lint를 사용해도 무방함
 
-#### npm script
+##### npm script
 ```sh
 "lint:sass": "sass-lint -c .sass-lint.yml 'src/sass/utils/, src/sass/gtris.scss' -v -q"
 ```
-![sass-lint](https://www.npmjs.com/package/sass-lint)
+[sass-lint](https://www.npmjs.com/package/sass-lint)
 
 #### jshint
 - 자바스크립트 코드 검사도구
-![jshint](https://www.npmjs.com/package/jshint)
-![jshint options](https://blog.outsider.ne.kr/1007)
+[jshint](https://www.npmjs.com/package/jshint)
+[jshint options](https://blog.outsider.ne.kr/1007)
 
 ##### npm script
 ```sh
@@ -40,7 +40,7 @@ npm run devbuild
 ```
 
 #### node-sass
-![node-sass](https://github.com/sass/node-sass)
+[node-sass](https://github.com/sass/node-sass)
 
 ##### npm script
 ```sh
@@ -49,7 +49,7 @@ npm run devbuild
 
 #### browserify
 - js bundler
-![browserify](http://browserify.org/)
+[browserify](http://browserify.org/)
 
 ##### npm script
 ```sh
@@ -68,8 +68,8 @@ npm run build
 ### uglifyjs
 - js파일 압축
 
-#### npm script
+##### npm script
 ```sh
 uglifyjs src/js/util/*.js src/js/components/*.js -o dist/bundle.min.js --source-map dist/map/bundle.min.js.map -p 5 -c -m
 ```
-![uglifyjs](http://lisperator.net/uglifyjs/)
+[uglifyjs](http://lisperator.net/uglifyjs/)
