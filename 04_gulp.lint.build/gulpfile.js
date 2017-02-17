@@ -15,8 +15,7 @@ var DIR = {
     MAP: 'map'
 };
 var SRC = {// input file
-    JS: DIR.SRC + '/js/components/*.js',
-    UTIL: DIR.SRC + '/js/util/*.js',
+    JS: DIR.SRC + '/js/**/*.js',
     SCSS: DIR.SRC + '/sass/*.s+(a|c)ss'
 };
 var dist = DIR.DEST; // output file
@@ -29,7 +28,7 @@ gulp.task('lint-js', function() {
     .pipe(jshint.reporter('fail'));
 });
 
-gulp.task('sass', function () {
+gulp.task('sass', function() {
   return gulp.src(SRC.SCSS)
 	.pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
@@ -38,14 +37,14 @@ gulp.task('sass', function () {
 });
 
 gulp.task('js', ['lint-js'], function() {
-    gulp.src([SRC.JS, SRC.UTIL])
+    gulp.src(SRC.JS)
     .pipe(concat('bundle.js'))
     .pipe(uglify())
 	.pipe(gulp.dest(dist));
 });
 
 // watch
-gulp.task('watch', function () {
+gulp.task('watch', function() {
     gulp.watch(SRC.SCSS, ['sass']);
     gulp.watch(SRC.JS, ['js']);
 });

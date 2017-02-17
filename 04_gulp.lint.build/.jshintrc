@@ -3,5 +3,6 @@
         "$": false
     },
     "undef": true,
-    "browser" : true
+    "browser" : true,
+    "node": true
 }
